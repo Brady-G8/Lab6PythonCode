@@ -1,5 +1,5 @@
-#Brady Graham - Updated Pt2
-def printMenu():
+#Brady Graham - Updated Final
+def print_menu():
     print('Menu\n'
           '-----\n'
           '1. Encode\n'
@@ -13,17 +13,26 @@ def encode(message):
 	
 	return encoded
 
+def decode(encoded_message):
+    print('to be implemented by my partner')
+
 def main():
+
+    encoded_message = 'hi'
     while True:
 
-        printMenu()
+        print_menu()
 
         selection = int(input('Please enter an option: '))
 
         if selection == 1:
             message = input('Please enter your password to encode: ')
+            print('Your password has been encoded and stored!\n')
+            encoded_message = encode(message)
         elif selection == 2:
-            print(f'the encoded value is')
+            if encoded_message == '-1':
+                break
+            print(f'The encoded value is {encoded_message}, and the original password is {decode(encoded_message)}.\n')
         elif selection == 3:
             break
         else:
