@@ -1,4 +1,4 @@
-#Brady Graham - Updated
+#Brady Graham - Updated Pt2
 def printMenu():
     print('Menu\n'
           '-----\n'
